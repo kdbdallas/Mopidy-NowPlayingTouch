@@ -1,25 +1,28 @@
-from __future__ import unicode_literals
+#from __future__ import unicode_literals
 
-from mopidy_touchclient import Extension, frontend as frontend_lib
+import unittest
 
+from mopidy_touchclient import Extension\
 
-def test_get_default_config():
-    ext = Extension()
-
-    config = ext.get_default_config()
-
-    assert '[touchclient]' in config
-    assert 'enabled = true' in config
+#, frontend as frontend_lib
 
 
-def test_get_config_schema():
-    ext = Extension()
+class ExtensionTest(unittest.TestCase):
 
-    schema = ext.get_config_schema()
+    def test_get_default_config(self):
+        ext = Extension()
 
-    # TODO Test the content of your config schema
-    #assert 'username' in schema
-    #assert 'password' in schema
+        config = ext.get_default_config()
+
+        assert '[touchclient]' in config
+        assert 'enabled = true' in config
 
 
-# TODO Write more tests
+    def test_get_config_schema(self):
+        ext = Extension()
+
+        schema = ext.get_config_schema()
+
+        # Test the content of your config schema
+        assert 'screen_width' in schema
+        assert 'screen_height' in schema
