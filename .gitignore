@@ -7,3 +7,4 @@ MANIFEST
 build/
 dist/
 .DS_Store
+.idea/dictionaries

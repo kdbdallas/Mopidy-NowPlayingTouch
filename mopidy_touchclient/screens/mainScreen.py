@@ -1,9 +1,11 @@
 import time
 import hashlib
 import json
+import logging
 import os
 import urllib
 import urllib.request
+from urllib.parse import urlparse
 from threading import Thread
 
 from baseScreen import BaseScreen
@@ -67,14 +69,11 @@ class MainScreen(BaseScreen):
                 new_track_pos = track_pos_millis / 1000
 
                 if new_track_pos != self.current_track_pos:
-                    progress = self.touch_text_manager.get_touch_object(
-                        "time_progress")
+                    progress = self.touch_text_manager.get_touch_object("time_progress")
                     progress.set_value(track_pos_millis)
                     self.current_track_pos = new_track_pos
                     progress.set_text(
-                        time.strftime('%M:%S', time.gmtime(
-                            self.current_track_pos)) +
-                        "/" + self.track_duration)
+                        time.strftime('%M:%S', time.gmtime(self.current_track_pos)) + "/" + self.track_duration)
                     return progress
         return None
 
@@ -126,8 +125,7 @@ class MainScreen(BaseScreen):
         # Track name
         label = TextItem(self.fonts['base'],
                          MainScreen.get_track_name(track),
-                         (x, (self.size[1]-self.base_size*3)/2
-                          - self.base_size*0.5),
+                         (x, (self.size[1]-self.base_size*3)/2 - self.base_size*0.5),
                          (width, -1))
         if not label.fit_horizontal:
             self.update_keys.append("track_name")
@@ -137,8 +135,7 @@ class MainScreen(BaseScreen):
         label = TextItem(self.fonts['base'],
                          MainScreen.get_track_album_name
                          (track),
-                         (x, (self.size[1]-self.base_size*3)/2
-                          + self.base_size*0.5),
+                         (x, (self.size[1]-self.base_size*3)/2 + self.base_size*0.5),
                          (width, -1))
         if not label.fit_horizontal:
             self.update_keys.append("album_name")
@@ -147,8 +144,7 @@ class MainScreen(BaseScreen):
         # Artist
         label = TextItem(self.fonts['base'],
                          self.get_artist_string(),
-                         (x, (self.size[1]-self.base_size*3)/2
-                          + self.base_size*1.5),
+                         (x, (self.size[1]-self.base_size*3)/2 + self.base_size*1.5),
                          (width, -1))
         if not label.fit_horizontal:
             self.update_keys.append("artist_name")
@@ -172,7 +168,7 @@ class MainScreen(BaseScreen):
         if len(artists_string) > 2:
             artists_string = artists_string[:-2]
         elif len(artists_string) == 0:
-            artists_string = "Unknow Artist"
+            artists_string = "Unknown Artist"
         return artists_string
 
     def get_image_file_name(self):
@@ -195,9 +191,7 @@ class MainScreen(BaseScreen):
         image_uris = self.core.library.get_images(
             {self.track.uri}).get()[self.track.uri]
         if len(image_uris) > 0:
-            urllib.urlretrieve(image_uris[0].uri,
-                               self.get_cover_folder() +
-                               self.get_image_file_name())
+            urllib.request.urlretrieve(image_uris[0].uri, self.get_cover_folder() + self.get_image_file_name())
             self.load_image()
         else:
             self.download_image_last_fm(0)
@@ -205,10 +199,8 @@ class MainScreen(BaseScreen):
     def download_image_last_fm(self, artist_index):
         if artist_index < len(self.artists):
             try:
-                safe_artist = urllib.quote_plus(
-                    self.artists[artist_index].name)
-                safe_album = urllib.quote_plus(
-                    MainScreen.get_track_album_name(self.track))
+                safe_artist = urllib.parse.quote_plus(self.artists[artist_index].name)
+                safe_album = urllib.parse.quote_plus(MainScreen.get_track_album_name(self.track))
                 url = "http://ws.audioscrobbler.com/2.0/?"
                 params = "method=album.getinfo&" + \
                          "api_key=59a04c6a73fb99d6e8996e01db306829&" \
@@ -218,9 +210,7 @@ class MainScreen(BaseScreen):
                 response = urllib.request.urlopen(url + params)
                 data = json.load(response)
                 image = data['album']['image'][-1]['#text']
-                urllib.urlretrieve(image,
-                                   self.get_cover_folder() +
-                                   self.get_image_file_name())
+                urllib.request.urlretrieve(image, self.get_cover_folder() + self.get_image_file_name())
                 self.load_image()
             except:
                 self.download_image_last_fm(artist_index + 1)

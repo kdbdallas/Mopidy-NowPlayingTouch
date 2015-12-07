@@ -72,7 +72,7 @@ class ScreenObjectsManager:
             self.selected_key = None
 
 
-class BaseItem():
+class BaseItem:
     def __init__(self, pos, size):
         self.pos = pos
         self.size = size
@@ -276,10 +276,7 @@ class Progressbar(TouchObject):
         self.value_text = value_text
         if value_text:
             self.text = TextItem(font, str(max_value), pos, None)
-            self.text.pos = (self.pos[0]
-                             + self.size[0] / 2 -
-                             self.text.size[0] /
-                             2, self.text.pos[1])
+            self.text.pos = (self.pos[0] + self.size[0] / 2 - self.text.size[0] / 2, self.text.pos[1])
             self.text.set_text(str(self.value), True)
         else:
             self.text = TextItem(font, text, pos, None)
@@ -301,10 +298,7 @@ class Progressbar(TouchObject):
             self.value = value
             if self.value_text:
                 self.set_text(str(self.value))
-                self.text.pos = (self.pos[0]
-                                 + self.size[0] / 2 -
-                                 self.text.size[0]
-                                 / 2, self.text.pos[1])
+                self.text.pos = (self.pos[0] + self.size[0] / 2 - self.text.size[0] / 2, self.text.pos[1])
             self.surface.fill(self.back_color)
             pos_pixel = value * self.size[0] / self.max
             rect = pygame.Rect(0, 0, pos_pixel, self.size[1])
