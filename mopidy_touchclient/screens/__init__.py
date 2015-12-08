@@ -1,3 +1,4 @@
+# flake8: noqa
 from baseScreen import BaseScreen
 from mainScreen import MainScreen
 from playlistScreen import PlaylistScreen

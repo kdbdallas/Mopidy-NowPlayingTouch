@@ -29,6 +29,11 @@ setup(
         'Pykka >= 1.1',
         'pygame'
     ],
+    test_suite='nose.collector',
+    tests_require=[
+        'nose',
+        'mock >= 1.0',
+    ],
     entry_points={
         'mopidy.ext': [
             'touchclient = mopidy_touchclient:Extension',

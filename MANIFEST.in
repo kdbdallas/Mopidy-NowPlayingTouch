@@ -6,3 +6,5 @@ include mopidy_touchclient/ext.conf
 include tox.ini
 
 recursive-include tests *.py
+
+prune docs

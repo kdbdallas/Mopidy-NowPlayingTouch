@@ -33,7 +33,7 @@ class ScreenManager():
     def __init__(self, size, core, cache, resolution_factor):
         self.core = core
         self.cache = cache
-        self.font = None
+        self.fonts = {}
         self.background = None
         self.currentScreen = mainScreenIndex
 
@@ -55,20 +55,23 @@ class ScreenManager():
     def init_manager(self, size):
         self.size = size
         self.baseSize = self.size[1] / self.resolution_factor
-
         self.background = DynamicBackground(self.size)
-        self.font = pygame.font.SysFont("arial", int(self.baseSize*0.9))
+
+        font = resource_filename(Requirement.parse("Mopidy-Touchclient"), "mopidy-touchclient/FontAwesome.otf")
+
+        self.fonts['base'] = pygame.font.SysFont("arial", int(self.baseSize*0.9))
+        self.fonts['icon'] = pygame.font.Font(font, int(self.baseSize*0.9))
 
         try:
             self.screens = [
-                MainScreen(size, self.baseSize, self, self.font, self.cache, self.core, self.background),
-                NowPlayingScreen(size, self.baseSize, self, self.font),
-                QueueScreen(size, self.baseSize, self, self.font),
-                PlaylistScreen(size, self.baseSize, self, self.font),
-                BrowseScreen(size, self.baseSize, self, self.font),
-                StreamsScreen(size, self.baseSize, self, self.font),
-                SearchScreen(size, self.baseSize, self, self.font),
-                SystemScreen(size, self.baseSize, self, self.font)]
+                MainScreen(size, self.baseSize, self, self.fonts, self.cache, self.core, self.background),
+                NowPlayingScreen(size, self.baseSize, self, self.fonts),
+                QueueScreen(size, self.baseSize, self, self.fonts),
+                PlaylistScreen(size, self.baseSize, self, self.fonts),
+                BrowseScreen(size, self.baseSize, self, self.fonts),
+                StreamsScreen(size, self.baseSize, self, self.fonts),
+                SearchScreen(size, self.baseSize, self, self.fonts),
+                SystemScreen(size, self.baseSize, self, self.fonts)]
         except:
             traceback.print_exc()
 
@@ -78,11 +81,19 @@ class ScreenManager():
 
         button_size = (self.size[0] / 6, self.baseSize)
 
-        # Search button
-        button = TouchAndTextItem(self.fonts['icon'], u" \ue986",
+        # Main button
+        button = TouchAndTextItem(self.fonts['icon'], u" \ue600",
                                   (0, self.size[1] - self.baseSize),
                                   button_size, center=True)
         self.down_bar_objects.set_touch_object("menu_0", button)
+        x = button.get_right_pos()
+
+        # Search button
+        button = TouchAndTextItem(self.fonts['icon'], u" \ue986",
+                                  (x, self.size[1] - self.baseSize),
+                                  button_size, center=True)
+
+        self.down_bar_objects.set_touch_object("menu_1", button)
         x = button.get_right_pos()
 
         self.options_changed()

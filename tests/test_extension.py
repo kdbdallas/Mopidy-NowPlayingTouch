@@ -2,7 +2,7 @@
 
 import unittest
 
-from mopidy_touchclient import Extension\
+from mopidy_touchclient import Extension
 
 #, frontend as frontend_lib
 

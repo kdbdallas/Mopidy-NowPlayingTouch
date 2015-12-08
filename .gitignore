@@ -8,3 +8,5 @@ build/
 dist/
 .DS_Store
 .idea/dictionaries
+xunit-*.xml
+*~

@@ -39,7 +39,8 @@ Before starting Mopidy, you must add configuration for
 Mopidy-TouchClient to your Mopidy configuration file::
 
     [touchclient]
-    # TODO: Add example of extension config
+    screen_width = 320
+    screen_height = 480
 
 
 Project resources
