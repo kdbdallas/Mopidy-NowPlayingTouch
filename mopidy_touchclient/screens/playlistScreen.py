@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from base_screen import BaseScreen
 
 from ..graphic_utils import ListView

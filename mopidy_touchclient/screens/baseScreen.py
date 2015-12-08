@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class BaseScreen():
 
     update_all = 0
