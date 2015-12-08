@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # flake8: noqa
 from baseScreen import BaseScreen
 from mainScreen import MainScreen
