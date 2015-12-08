@@ -5,7 +5,6 @@ from base_screen import BaseScreen
 from .main_screen import MainScreen
 from ..graphic_utils import ListView
 
-
 class QueueScreen(BaseScreen):
     def __init__(self, size, base_size, manager, fonts):
         BaseScreen.__init__(self, size, base_size, manager, fonts)

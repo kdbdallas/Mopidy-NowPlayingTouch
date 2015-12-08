@@ -13,7 +13,6 @@ mode_track_name = 0
 mode_album_name = 1
 mode_artist_name = 2
 
-
 class SearchScreen(BaseScreen):
     def __init__(self, size, base_size, manager, fonts):
         BaseScreen.__init__(self, size, base_size, manager, fonts)

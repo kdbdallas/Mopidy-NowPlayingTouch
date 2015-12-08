@@ -5,7 +5,6 @@ import pygame
 
 change_speed = 2
 
-
 class DynamicBackground:
 
     def __init__(self, size):

@@ -6,7 +6,6 @@ import mopidy.models
 
 from ..graphic_utils import ListView
 
-
 class BrowseScreen(BaseScreen):
     def __init__(self, size, base_size, manager, fonts):
         BaseScreen.__init__(self, size, base_size, manager, fonts)

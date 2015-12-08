@@ -8,7 +8,6 @@ import pygame
 
 logger = logging.getLogger(__name__)
 
-
 class ScreenObjectsManager:
     def __init__(self):
         self.touch_objects = {}
