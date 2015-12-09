@@ -6,8 +6,7 @@ import json
 import logging
 import os
 import urllib
-import urllib.request
-from urllib.parse import urlparse
+import urllib2
 from threading import Thread
 
 from baseScreen import BaseScreen
@@ -193,7 +192,7 @@ class MainScreen(BaseScreen):
         image_uris = self.core.library.get_images(
             {self.track.uri}).get()[self.track.uri]
         if len(image_uris) > 0:
-            urllib.request.urlretrieve(image_uris[0].uri, self.get_cover_folder() + self.get_image_file_name())
+            urllib.urlretrieve(image_uris[0].uri, self.get_cover_folder() + self.get_image_file_name())
             self.load_image()
         else:
             self.download_image_last_fm(0)
@@ -201,18 +200,18 @@ class MainScreen(BaseScreen):
     def download_image_last_fm(self, artist_index):
         if artist_index < len(self.artists):
             try:
-                safe_artist = urllib.parse.quote_plus(self.artists[artist_index].name)
-                safe_album = urllib.parse.quote_plus(MainScreen.get_track_album_name(self.track))
+                safe_artist = urllib.quote_plus(self.artists[artist_index].name)
+                safe_album = urllib.quote_plus(MainScreen.get_track_album_name(self.track))
                 url = "http://ws.audioscrobbler.com/2.0/?"
                 params = "method=album.getinfo&" + \
                          "api_key=59a04c6a73fb99d6e8996e01db306829&" \
                          + "artist=" \
                          + safe_artist + "&album=" + safe_album + \
                          "&format=json"
-                response = urllib.request.urlopen(url + params)
+                response = urllib2.urlopen(url + params)
                 data = json.load(response)
                 image = data['album']['image'][-1]['#text']
-                urllib.request.urlretrieve(image, self.get_cover_folder() + self.get_image_file_name())
+                urllib.urlretrieve(image, self.get_cover_folder() + self.get_image_file_name())
                 self.load_image()
             except:
                 self.download_image_last_fm(artist_index + 1)
