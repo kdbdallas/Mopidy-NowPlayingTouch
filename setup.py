@@ -9,7 +9,7 @@ from setuptools import find_packages, setup
 
 def get_version(filename):
     with open(filename, 'rt', encoding='utf-8') as fh:
-        metadata = dict(re.findall("__([a-z]+)__ = '([^']+)'", fh.read().decode('utf-8')))
+        metadata = dict(re.findall("__([a-z]+)__ = '([^']+)'", fh.read()))
         return metadata['version']
 
 
