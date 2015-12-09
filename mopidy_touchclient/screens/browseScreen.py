@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from base_screen import BaseScreen
+from baseScreen import BaseScreen
 
 import mopidy.models
 

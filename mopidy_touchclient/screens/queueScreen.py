@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from base_screen import BaseScreen
+from baseScreen import BaseScreen
 
-from .main_screen import MainScreen
+from .mainScreen import MainScreen
 from ..graphic_utils import ListView
 
 class QueueScreen(BaseScreen):
