@@ -1,7 +1,7 @@
 language: python
 
 python:
-  - "3.2_with_system_site_packages"
+  - "2.7_with_system_site_packages"
 
 env:
   - TOX_ENV=py32
@@ -13,13 +13,13 @@ install:
   - "sudo apt-get update || true"
   - "sudo apt-get install mopidy"
   - "sudo apt-get install python-pygame"
-  - "pip3 install tox"
+  - "pip install tox"
 
 script:
   - "tox -e $TOX_ENV"
 
 after_success:
-  - "if [ $TOX_ENV == 'py32' ]; then pip3 install coveralls; coveralls; fi"
+  - "if [ $TOX_ENV == 'py27' ]; then pip3 install coveralls; coveralls; fi"
 
 notifications:
   email:
