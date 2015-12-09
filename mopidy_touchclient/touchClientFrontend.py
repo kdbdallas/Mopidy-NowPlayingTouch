@@ -11,7 +11,7 @@ import pygame
 
 import pykka
 
-from .screen_manager import ScreenManager
+from .screenManager import ScreenManager
 
 
 logger = logging.getLogger(__name__)
@@ -47,7 +47,7 @@ class TouchClient(pykka.ThreadingActor, core.CoreListener):
 
         self.get_display_surface(self.screen_size)
 
-        self.screen_manager = ScreenManager(self.screen_size,
+        self.screenManager = ScreenManager(self.screen_size,
                                             self.core,
                                             self.cache_dir,
                                             self.resolution_factor)
@@ -83,16 +83,16 @@ class TouchClient(pykka.ThreadingActor, core.CoreListener):
 
         while self.running:
             clock.tick(12)
-            self.screen_manager.update(self.screen)
+            self.screenManager.update(self.screen)
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     os.system("pkill mopidy")
                 elif event.type == pygame.VIDEORESIZE:
                     self.get_display_surface(event.size)
-                    self.screen_manager.resize(event)
+                    self.screenManager.resize(event)
                 else:
-                    self.screen_manager.event(event)
+                    self.screenManager.event(event)
         pygame.quit()
 
     def on_start(self):
@@ -108,33 +108,33 @@ class TouchClient(pykka.ThreadingActor, core.CoreListener):
 
     def track_playback_started(self, tl_track):
         try:
-            self.screen_manager.track_started(tl_track)
+            self.screenManager.track_started(tl_track)
         except:
             traceback.print_exc()
 
     def volume_changed(self, volume):
-        self.screen_manager.volume_changed(volume)
+        self.screenManager.volume_changed(volume)
 
     def playback_state_changed(self, old_state, new_state):
-        self.screen_manager.playback_state_changed(old_state, new_state)
+        self.screenManager.playback_state_changed(old_state, new_state)
 
     def tracklist_changed(self):
         try:
-            self.screen_manager.tracklist_changed()
+            self.screenManager.tracklist_changed()
         except:
             traceback.print_exc()
 
     def track_playback_ended(self, tl_track, time_position):
-        self.screen_manager.track_playback_ended(tl_track, time_position)
+        self.screenManager.track_playback_ended(tl_track, time_position)
 
     def options_changed(self):
         try:
-            self.screen_manager.options_changed()
+            self.screenManager.options_changed()
         except:
             traceback.print_exc()
 
     def playlists_loaded(self):
-        self.screen_manager.playlists_loaded()
+        self.screenManager.playlists_loaded()
 
     def stream_title_changed(self, title):
-        self.screen_manager.stream_title_changed(title)
+        self.screenManager.stream_title_changed(title)
