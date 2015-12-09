@@ -7,3 +7,4 @@ from playlistScreen import PlaylistScreen
 from browseScreen import BrowseScreen
 from searchScreen import SearchScreen
 from queueScreen import QueueScreen
+from keyboardScreen import Keyboard
