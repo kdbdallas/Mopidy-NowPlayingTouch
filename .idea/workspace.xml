@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e603599-6181-48d5-b5dd-737dc8356137" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mopidy_touchclient/ext.conf" afterPath="$PROJECT_DIR$/mopidy_touchclient/ext.conf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mopidy_touchclient/touchClientFrontend.py" afterPath="$PROJECT_DIR$/mopidy_touchclient/touchClientFrontend.py" />
     </list>
     <ignored path="Mopidy-Touchclient.iws" />
@@ -56,8 +56,8 @@
       <file leaf-file-name="touchClientFrontend.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mopidy_touchclient/touchClientFrontend.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52867246">
-              <caret line="105" column="20" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.7776905">
+              <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
               </folding>
@@ -90,7 +90,6 @@
         <option value="$PROJECT_DIR$/tests/test_extension.py" />
         <option value="$PROJECT_DIR$/tests/__init__.py" />
         <option value="$PROJECT_DIR$/mopidy_touchclient/screenManager.py" />
-        <option value="$PROJECT_DIR$/mopidy_touchclient/ext.conf" />
         <option value="$PROJECT_DIR$/mopidy_touchclient/__init__.py" />
         <option value="$PROJECT_DIR$/mopidy_touchclient/screens/searchScreen.py" />
         <option value="$PROJECT_DIR$/mopidy_touchclient/screens/queueScreen.py" />
@@ -110,6 +109,7 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/mopidy_touchclient/ext.conf" />
         <option value="$PROJECT_DIR$/mopidy_touchclient/touchClientFrontend.py" />
       </list>
     </option>
@@ -874,14 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mopidy_touchclient/ext.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036115568">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mopidy_touchclient/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17674784">
@@ -1002,10 +994,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mopidy_touchclient/ext.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="12" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mopidy_touchclient/touchClientFrontend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52867246">
-          <caret line="105" column="20" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.7776905">
+          <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
           <folding>
             <element signature="e#25#39#0" expanded="true" />
           </folding>
