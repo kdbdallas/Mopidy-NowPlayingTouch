@@ -13,8 +13,8 @@ from pkg_resources import Requirement, resource_filename
 
 import pygame
 
-from screens import BaseScreen, Keyboard, BrowseScreen, MainScreen, StreamsScreen,\
-    PlaylistScreen, NowPlayingScreen, QueueScreen, SearchScreen, SystemScreen
+from screens import BaseScreen, Keyboard, BrowseScreen, MainScreen,\ # StreamsScreen,\
+    PlaylistScreen, QueueScreen, SearchScreen #, SystemScreen, NowPlayingScreen
 
 
 logger = logging.getLogger(__name__)
@@ -67,13 +67,13 @@ class ScreenManager():
         try:
             self.screens = [
                 MainScreen(size, self.baseSize, self, self.fonts, self.cache, self.core, self.background),
-                NowPlayingScreen(size, self.baseSize, self, self.fonts),
+                #NowPlayingScreen(size, self.baseSize, self, self.fonts),
                 QueueScreen(size, self.baseSize, self, self.fonts),
                 PlaylistScreen(size, self.baseSize, self, self.fonts),
                 BrowseScreen(size, self.baseSize, self, self.fonts),
-                StreamsScreen(size, self.baseSize, self, self.fonts),
-                SearchScreen(size, self.baseSize, self, self.fonts),
-                SystemScreen(size, self.baseSize, self, self.fonts)]
+                #StreamsScreen(size, self.baseSize, self, self.fonts),
+                SearchScreen(size, self.baseSize, self, self.fonts)]
+                #SystemScreen(size, self.baseSize, self, self.fonts)]
         except:
             traceback.print_exc()
 
