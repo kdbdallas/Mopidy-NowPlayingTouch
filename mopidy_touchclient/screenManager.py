@@ -273,3 +273,12 @@ class ScreenManager():
     def system(self):
         self.screens[SystemIndex].system_changed()
         self.updateType = BaseScreen.update_all
+
+    def open_keyboard(self, input_listener):
+        self.keyboard = Keyboard(self.size, self.baseSize, self,
+                                 self.fonts, input_listener)
+        self.updateType = BaseScreen.update_all
+
+    def close_keyboard(self):
+        self.keyboard = None
+        self.updateType = BaseScreen.update_all

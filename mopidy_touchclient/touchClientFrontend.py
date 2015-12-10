@@ -70,10 +70,7 @@ class TouchClient(pykka.ThreadingActor, core.CoreListener):
 
     def get_display_surface(self, size):
         try:
-            if self.fullscreen:
-                self.screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
-            else:
-                self.screen = pygame.display.set_mode(size, pygame.RESIZABLE)
+            self.screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
         except Exception:
             raise exceptions.FrontendError("Error on display init:\n" + traceback.format_exc())
 
@@ -134,7 +131,7 @@ class TouchClient(pykka.ThreadingActor, core.CoreListener):
             traceback.print_exc()
 
     def playlists_loaded(self):
-        self.screenManager.playlists_loaded()
+        self.screenManager.playlists()
 
     def stream_title_changed(self, title):
         self.screenManager.stream_title_changed(title)
