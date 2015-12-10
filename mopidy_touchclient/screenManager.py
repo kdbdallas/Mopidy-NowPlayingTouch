@@ -13,8 +13,9 @@ from pkg_resources import Requirement, resource_filename
 
 import pygame
 
-from screens import BaseScreen, Keyboard, BrowseScreen, MainScreen,\ # StreamsScreen,\
-    PlaylistScreen, QueueScreen, SearchScreen #, SystemScreen, NowPlayingScreen
+# StreamsScreen, SystemScreen, NowPlayingScreen
+from screens import BaseScreen, Keyboard, BrowseScreen, MainScreen,\
+    PlaylistScreen, QueueScreen, SearchScreen
 
 
 logger = logging.getLogger(__name__)
