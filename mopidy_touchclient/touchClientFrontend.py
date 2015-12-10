@@ -24,7 +24,10 @@ class TouchClient(pykka.ThreadingActor, core.CoreListener):
         self.running = False
         self.cursor = config['touchclient']['cursor']
         self.cache_dir = config['touchclient']['cache_dir']
-        self.screen_size = (config['touchclient']['screen_width'], config['touchclient']['screen_height'])
+
+        # The way the LCD's work we have to put the height value first.
+        # We do it here so the user doesnt have to do anything strange.
+        self.screen_size = (config['touchclient']['screen_height'], config['touchclient']['screen_width'])
         self.resolution_factor = (config['touchclient']['resolution_factor'])
 
         if config['touchclient']['sdl_fbdev'].lower() != "none":
