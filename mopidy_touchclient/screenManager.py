@@ -85,14 +85,14 @@ class ScreenManager():
         button_size = (self.size[0] / 6, self.baseSize)
 
         # Main button
-        button = TouchAndTextItem(self.fonts['icon'], u" \ue600",
+        button = TouchAndTextItem(self.fonts['icon'], u" \ue001",
                                   (0, self.size[1] - self.baseSize),
                                   button_size, center=True)
         self.down_bar_objects.set_touch_object("menu_0", button)
         x = button.get_right_pos()
 
         # Search button
-        button = TouchAndTextItem(self.fonts['icon'], u" \ue986",
+        button = TouchAndTextItem(self.fonts['icon'], u" \ue002",
                                   (x, self.size[1] - self.baseSize),
                                   button_size, center=True)
 

@@ -39,7 +39,6 @@ class Extension(ext.Extension):
         schema['sdl_mousedev'] = config.String()
         schema['sdl_audiodriver'] = config.String()
         schema['sdl_path_dsp'] = config.String()
-        schema['loglevels'] = config.String()
 
         return schema
 
