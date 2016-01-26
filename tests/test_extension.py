@@ -4,7 +4,7 @@
 
 import unittest
 
-from mopidy_touchclient import Extension
+from mopidy_nowplayingtouch import Extension
 
 #, frontend as frontend_lib
 
@@ -16,7 +16,7 @@ class ExtensionTest(unittest.TestCase):
 
         config = ext.get_default_config()
 
-        assert '[touchclient]' in config
+        assert '[nowplayingtouch]' in config
         assert 'enabled = true' in config
 
 

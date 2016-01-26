@@ -14,13 +14,13 @@ def get_version(filename):
 
 
 setup(
-    name='Mopidy-TouchClient',
-    version=get_version('mopidy_touchclient/__init__.py'),
-    url='https://github.com/kdbdallas/mopidy-touchclient',
+    name='Mopidy-NowPlayingTouch',
+    version=get_version('mopidy_nowplayingtouch/__init__.py'),
+    url='https://github.com/kdbdallas/mopidy-nowplayingtouch',
     license='Apache License, Version 2.0',
     author='Dallas Brown',
     author_email='dbrown@port21.com',
-    description='Mopidy extension for Mopidy Music Server and the Pi MusicBox.',
+    description='A Frontend Mopidy extension for the Mopidy Music Server and the Pi MusicBox for use with a Touch Screen.',
     long_description=open('README.rst').read(),
     packages=find_packages(exclude=['tests', 'tests.*']),
     zip_safe=False,
@@ -38,7 +38,7 @@ setup(
     ],
     entry_points={
         'mopidy.ext': [
-            'touchclient = mopidy_touchclient:Extension',
+            'nowplayingtouch = mopidy_nowplayingtouch:Extension',
         ],
     },
     classifiers=[
