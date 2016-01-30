@@ -5,54 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e603599-6181-48d5-b5dd-737dc8356137" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/ext.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/graphic_utils/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/graphic_utils/background_manager.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/graphic_utils/list_view.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/graphic_utils/screen_objects.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/input/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/input/gpio_inpput_manager.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/input/input_manager.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/screenManager.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/baseScreen.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/browseScreen.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/keyboardScreen.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/mainScreen.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/playlistScreen.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/queueScreen.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/searchScreen.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/touchClientFrontend.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/ext.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/graphic_utils/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/graphic_utils/background_manager.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/graphic_utils/list_view.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/graphic_utils/screen_objects.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/input/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/input/gpio_inpput_manager.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/input/input_manager.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/screenManager.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/screens/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/screens/baseScreen.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/screens/browseScreen.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/screens/keyboardScreen.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/screens/mainScreen.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/screens/playlistScreen.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/screens/queueScreen.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/screens/searchScreen.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mopidy_touchclient/touchClientFrontend.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MANIFEST.in" afterPath="$PROJECT_DIR$/MANIFEST.in" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rst" afterPath="$PROJECT_DIR$/README.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.cfg" afterPath="$PROJECT_DIR$/setup.cfg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_extension.py" afterPath="$PROJECT_DIR$/tests/test_extension.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mopidy_nowplayingtouch/__init__.py" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/__init__.py" />
     </list>
     <ignored path="Mopidy-Touchclient.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,71 +30,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tox.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tox.ini">
+      <file leaf-file-name="ext.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/ext.conf">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="60" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setup.cfg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setup.cfg">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="49" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.rst" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.rst">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="20" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.12961508">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/input/__init__.py">
+      <file leaf-file-name="touchClientFrontend.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/touchClientFrontend.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gpio_inpput_manager.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gpio_inpput_manager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/input/gpio_inpput_manager.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -195,10 +118,10 @@
         <option value="$PROJECT_DIR$/README.rst" />
         <option value="$PROJECT_DIR$/MANIFEST.in" />
         <option value="$PROJECT_DIR$/tests/test_extension.py" />
-        <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/__init__.py" />
         <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/ext.conf" />
         <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/screenManager.py" />
         <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/touchClientFrontend.py" />
+        <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/__init__.py" />
       </list>
     </option>
   </component>
@@ -254,6 +177,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Mopidy-NowPlayingTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mopidy-Touchclient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mopidy-NowPlayingTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopidy_nowplayingtouch" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -545,9 +482,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="564" y="23" width="1382" height="1370" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26700434" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26700434" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -684,22 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tox.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="60" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -724,14 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="49" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.011783189">
@@ -744,14 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07069913">
           <caret line="6" column="27" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/ext.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.058915947">
-          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -776,22 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3417125">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/touchClientFrontend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40062845">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -860,10 +749,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/__init__.py">
+    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/input/gpio_inpput_manager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.011783189">
+          <caret line="1" column="49" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2120974">
+          <caret line="18" column="60" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tox.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12961508">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4241948">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/ext.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -876,10 +805,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/input/gpio_inpput_manager.py">
+    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/touchClientFrontend.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12961508">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>

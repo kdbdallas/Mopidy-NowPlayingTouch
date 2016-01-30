@@ -6,7 +6,7 @@ import os
 
 
 from mopidy import config, ext
-from .touchClientFrontend import NowPlayingTouch
+from .touchClientFrontend import TouchClient
 
 __version__ = '0.1.0'
 
@@ -44,4 +44,4 @@ class Extension(ext.Extension):
 
     def setup(self, registry):
         # Register a frontend
-        registry.add('frontend', NowPlayingTouch)
+        registry.add('frontend', TouchClient)
