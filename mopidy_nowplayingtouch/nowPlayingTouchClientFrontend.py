@@ -42,14 +42,13 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
         if config['nowplayingtouch']['sdl_audiodriver'].lower() != "none":
             os.environ["SDL_AUDIODRIVER"] = (config['nowplayingtouch']['sdl_audiodriver'])
 
-        os.putenv('SDL_MOUSEDEV', '/dev/input/event1')
         os.environ["SDL_PATH_DSP"] = config['nowplayingtouch']['sdl_path_dsp']
 
         pygame.init()
         pygame.display.set_caption("Mopidy-NowPlayingTouch")
-        pygame.mouse.set_visible(self.cursor)
 
         self.get_display_surface(self.screen_size)
+        pygame.mouse.set_visible(self.cursor)
 
         self.screenManager = ScreenManager(self.screen_size,
                                             self.core,
@@ -74,7 +73,10 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
 
     def get_display_surface(self, size):
         try:
-            self.screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
+            if self.fullscreen:
+                self.screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
+            else:
+                self.screen = pygame.display.set_mode(size, pygame.RESIZABLE)
         except Exception:
             raise exceptions.FrontendError("Error on display init:\n" + traceback.format_exc())
 
