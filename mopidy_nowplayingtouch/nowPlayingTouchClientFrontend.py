@@ -42,6 +42,7 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
         if config['nowplayingtouch']['sdl_audiodriver'].lower() != "none":
             os.environ["SDL_AUDIODRIVER"] = (config['nowplayingtouch']['sdl_audiodriver'])
 
+        os.putenv('SDL_MOUSEDEV', '/dev/fb0')
         os.environ["SDL_PATH_DSP"] = config['nowplayingtouch']['sdl_path_dsp']
 
         pygame.init()

@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e603599-6181-48d5-b5dd-737dc8356137" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tox.ini" afterPath="$PROJECT_DIR$/tox.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mopidy_nowplayingtouch/nowPlayingTouchClientFrontend.py" afterPath="$PROJECT_DIR$/mopidy_nowplayingtouch/nowPlayingTouchClientFrontend.py" />
     </list>
     <ignored path="Mopidy-Touchclient.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +29,18 @@
     <favorites_list name="Mopidy-Touchclient" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="nowPlayingTouchClientFrontend.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/nowPlayingTouchClientFrontend.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.46841672">
+              <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -83,6 +92,7 @@
         <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/touchClientFrontend.py" />
         <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/__init__.py" />
         <option value="$PROJECT_DIR$/tox.ini" />
+        <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/nowPlayingTouchClientFrontend.py" />
       </list>
     </option>
   </component>
@@ -92,8 +102,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="564" />
-    <option name="y" value="23" />
+    <option name="x" value="649" />
+    <option name="y" value="24" />
     <option name="width" value="1382" />
     <option name="height" value="1370" />
   </component>
@@ -442,10 +452,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="564" y="23" width="1382" height="1370" extended-state="0" />
-    <editor active="false" />
+    <frame x="649" y="24" width="1382" height="1370" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26700434" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26700434" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -482,7 +492,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="remove open file encoding" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -852,6 +864,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5537721">
           <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/nowPlayingTouchClientFrontend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46841672">
+          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
           <folding />
         </state>
       </provider>
