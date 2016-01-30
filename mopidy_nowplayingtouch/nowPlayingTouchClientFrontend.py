@@ -17,9 +17,9 @@ from .screenManager import ScreenManager
 logger = logging.getLogger(__name__)
 
 
-class TouchClient(pykka.ThreadingActor, core.CoreListener):
+class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
     def __init__(self, config, core):
-        super(TouchClient, self).__init__()
+        super(NowPlayingTouch, self).__init__()
         self.core = core
         self.running = False
         self.cursor = config['nowplayingtouch']['cursor']

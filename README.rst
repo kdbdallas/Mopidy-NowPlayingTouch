@@ -2,11 +2,11 @@
 Mopidy-NowPlayingTouch
 ****************************
 
-.. image:: https://img.shields.io/pypi/v/Mopidy-TouchClient.svg?style=flat
+.. image:: https://img.shields.io/pypi/v/Mopidy-NowPlayingTouch.svg?style=flat
     :target: https://pypi.python.org/pypi/Mopidy-NowPlayingTouch/
     :alt: Latest PyPI version
 
-.. image:: https://img.shields.io/pypi/dm/Mopidy-TouchClient.svg?style=flat
+.. image:: https://img.shields.io/pypi/dm/Mopidy-NowPlayingTouch.svg?style=flat
     :target: https://pypi.python.org/pypi/Mopidy-NowPlayingTouch/
     :alt: Number of PyPI downloads
 
