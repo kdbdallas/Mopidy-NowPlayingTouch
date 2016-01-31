@@ -36,7 +36,6 @@ SystemIndex = 7
 class ScreenManager():
 
     def __init__(self, size, core, cache, resolution_factor):
-        pdb.set_trace()
         self.core = core
         self.cache = cache
         self.fonts = {}
@@ -55,7 +54,7 @@ class ScreenManager():
         self.updateType = BaseScreen.update_all
 
         self.resolution_factor = resolution_factor
-
+        pdb.set_trace()
         self.init_manager(size)
 
     def init_manager(self, size):
