@@ -53,8 +53,8 @@ class ScreenManager():
         self.updateType = BaseScreen.update_all
 
         self.resolution_factor = resolution_factor
-        pdb.set_trace()
-        self.init_manager(size)
+        #pdb.set_trace()
+        self.init_manager(480, 320)
 
     def init_manager(self, size):
         self.size = size
