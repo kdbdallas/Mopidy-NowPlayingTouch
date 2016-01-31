@@ -12,6 +12,7 @@ import mopidy
 from pkg_resources import Requirement, resource_filename
 
 import pygame
+import pdb
 
 # StreamsScreen, SystemScreen, NowPlayingScreen
 from screens import BaseScreen, Keyboard, BrowseScreen, MainScreen,\
@@ -52,7 +53,7 @@ class ScreenManager():
         self.updateType = BaseScreen.update_all
 
         self.resolution_factor = resolution_factor
-
+        pdb.set_trace()
         self.init_manager(size)
 
     def init_manager(self, size):
