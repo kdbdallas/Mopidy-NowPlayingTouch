@@ -13,6 +13,8 @@ from pkg_resources import Requirement, resource_filename
 
 import pygame
 
+import pdb
+
 # StreamsScreen, SystemScreen, NowPlayingScreen
 from screens import BaseScreen, Keyboard, BrowseScreen, MainScreen,\
     PlaylistScreen, QueueScreen, SearchScreen, MenuScreen
@@ -34,6 +36,7 @@ SystemIndex = 7
 class ScreenManager():
 
     def __init__(self, size, core, cache, resolution_factor):
+        pdb.set_trace()
         self.core = core
         self.cache = cache
         self.fonts = {}
