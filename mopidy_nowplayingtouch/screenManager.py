@@ -60,7 +60,7 @@ class ScreenManager():
         self.baseSize = self.size[1] / self.resolution_factor
         self.background = DynamicBackground(self.size)
 
-        font = resource_filename(Requirement.parse("Mopidy-NowPlayingTouch"), "mopidy-nowplayingtouch/FontAwesome.otf")
+        font = resource_filename(Requirement.parse("mopidy-nowplayingtouch"), "mopidy_nowplayingtouch/FontAwesome.otf")
 
         self.fonts['base'] = pygame.font.SysFont("arial", int(self.baseSize*0.9))
         self.fonts['icon'] = pygame.font.Font(font, int(self.baseSize*0.9))
