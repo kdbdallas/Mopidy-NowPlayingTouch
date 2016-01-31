@@ -12,7 +12,6 @@ import mopidy
 from pkg_resources import Requirement, resource_filename
 
 import pygame
-import pdb
 
 # StreamsScreen, SystemScreen, NowPlayingScreen
 from screens import BaseScreen, Keyboard, BrowseScreen, MainScreen,\
@@ -30,6 +29,7 @@ browseIndex = 4
 streamsIndex = 5
 searchIndex = 6
 SystemIndex = 7
+MenuIndex = 8
 
 
 class ScreenManager():
@@ -53,8 +53,7 @@ class ScreenManager():
         self.updateType = BaseScreen.update_all
 
         self.resolution_factor = resolution_factor
-        #pdb.set_trace()
-        self.init_manager((480, 320))
+        self.init_manager(size)
 
     def init_manager(self, size):
         self.size = size
@@ -224,8 +223,7 @@ class ScreenManager():
         self.updateType = BaseScreen.update_all
 
     def options_changed(self):
-        pdb.set_trace()
-        self.screens[mainScreenIndex].options_changed()
+        self.screens[MenuIndex].options_changed()
         self.updateType = BaseScreen.update_all
 
     def change_screen(self, new_screen):
