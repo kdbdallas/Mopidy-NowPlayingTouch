@@ -15,7 +15,7 @@ import pygame
 
 # StreamsScreen, SystemScreen, NowPlayingScreen
 from screens import BaseScreen, Keyboard, BrowseScreen, MainScreen,\
-    PlaylistScreen, QueueScreen, SearchScreen
+    PlaylistScreen, QueueScreen, SearchScreen, MenuScreen
 
 
 logger = logging.getLogger(__name__)
@@ -73,8 +73,9 @@ class ScreenManager():
                 PlaylistScreen(size, self.baseSize, self, self.fonts),
                 BrowseScreen(size, self.baseSize, self, self.fonts),
                 #StreamsScreen(size, self.baseSize, self, self.fonts),
-                SearchScreen(size, self.baseSize, self, self.fonts)]
-                #SystemScreen(size, self.baseSize, self, self.fonts)]
+                SearchScreen(size, self.baseSize, self, self.fonts),
+                #SystemScreen(size, self.baseSize, self, self.fonts)],
+                MenuScreen(size, self.baseSize, self, self.fonts, self.core)]
         except:
             traceback.print_exc()
 
