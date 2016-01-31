@@ -27,6 +27,23 @@ class MainScreen(BaseScreen):
         BaseScreen.__init__(self, size, base_size, manager, fonts)
         self.core = core
 
+        current_track = self.core.playback.current_track.get()
+        if current_track is None:
+            self.track_playback_ended(None, None)
+        else:
+            self.track_started(current_track)
+
+        # Top bar
+        self.top_bar = pygame.Surface((self.size[0], self.base_size), pygame.SRCALPHA)
+        self.top_bar.fill((0, 0, 0, 128))
+
+        self.touch_text_manager = ScreenObjectsManager()
+
+        # Play/pause
+        button = TouchAndTextItem(self.fonts['icon'], u"\ue615 ", (0, 0), None)
+
+        self.touch_text_manager.set_touch_object("pause_play", button)
+
     def should_update(self):
         if len(self.update_keys) > 0:
             return True
