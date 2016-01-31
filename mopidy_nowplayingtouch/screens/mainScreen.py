@@ -27,8 +27,11 @@ class MainScreen(BaseScreen):
         BaseScreen.__init__(self, size, base_size, manager, fonts)
 
         self.core = core
+        self.cache = cache
+        self.background = background
 
         current_track = self.core.playback.current_track.get()
+
         if current_track is None:
             self.track_playback_ended(None, None)
         else:
@@ -44,6 +47,24 @@ class MainScreen(BaseScreen):
         button = TouchAndTextItem(self.fonts['icon'], u"\ue615 ", (0, 0), None)
 
         self.touch_text_manager.set_touch_object("pause_play", button)
+
+        x = button.get_right_pos()
+
+        # Mute
+        button = TouchAndTextItem(self.fonts['icon'], u"\ue61f ", (x, 0), None)
+
+        self.touch_text_manager.set_touch_object("mute", button)
+
+        x = button.get_right_pos()
+
+        # Volume
+        progress = Progressbar(self.fonts['base'], "100", (x, 0), (self.size[0] - x, self.base_size), 100, True)
+
+        self.touch_text_manager.set_touch_object("volume", progress)
+
+        progress.set_value(self.core.playback.volume.get())
+
+        self.progress_show = False
 
     def should_update(self):
         if len(self.update_keys) > 0:

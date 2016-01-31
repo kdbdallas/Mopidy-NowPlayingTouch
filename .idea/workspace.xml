@@ -32,17 +32,17 @@
         <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/ext.conf">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainScreen.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mainScreen.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/screens/mainScreen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.1666665">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state vertical-scroll-proportion="-0.6982344">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screenManager.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="screenManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/screenManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79052967">
-              <caret line="237" column="47" selection-start-line="237" selection-start-column="47" selection-end-line="237" selection-end-column="47" />
+            <state vertical-scroll-proportion="-20.37037">
+              <caret line="208" column="59" selection-start-line="208" selection-start-column="59" selection-end-line="208" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -132,8 +132,8 @@
         <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/nowPlayingTouchClientFrontend.py" />
         <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/menuScreen.py" />
         <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/__init__.py" />
-        <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/mainScreen.py" />
         <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/screenManager.py" />
+        <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/mainScreen.py" />
       </list>
     </option>
   </component>
@@ -903,14 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/ext.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/nowPlayingTouchClientFrontend.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-25.962963">
@@ -927,18 +919,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/screens/mainScreen.py">
+    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/screenManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.1666665">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state vertical-scroll-proportion="-20.37037">
+          <caret line="208" column="59" selection-start-line="208" selection-start-column="59" selection-end-line="208" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/screenManager.py">
+    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/ext.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79052967">
-          <caret line="237" column="47" selection-start-line="237" selection-start-column="47" selection-end-line="237" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/screens/mainScreen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6982344">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
