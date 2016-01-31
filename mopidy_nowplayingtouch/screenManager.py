@@ -13,8 +13,6 @@ from pkg_resources import Requirement, resource_filename
 
 import pygame
 
-import pdb
-
 # StreamsScreen, SystemScreen, NowPlayingScreen
 from screens import BaseScreen, Keyboard, BrowseScreen, MainScreen,\
     PlaylistScreen, QueueScreen, SearchScreen, MenuScreen
@@ -61,7 +59,7 @@ class ScreenManager():
         self.size = size
         self.baseSize = self.size[1] / self.resolution_factor
         self.background = DynamicBackground(self.size)
-        pdb.set_trace()
+
         font = resource_filename(Requirement.parse("mopidy-nowplayingtouch"), "mopidy_nowplayingtouch/FontAwesome.otf")
 
         self.fonts['base'] = pygame.font.SysFont("arial", int(self.baseSize*0.9))

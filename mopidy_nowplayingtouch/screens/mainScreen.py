@@ -15,6 +15,8 @@ import mopidy.core
 
 import pygame
 
+import pdb
+
 from ..graphic_utils import Progressbar, ScreenObjectsManager, TextItem, TouchAndTextItem
 from ..input import InputManager
 
@@ -25,6 +27,7 @@ logger = logging.getLogger(__name__)
 class MainScreen(BaseScreen):
     def __init__(self, size, base_size, manager, fonts, cache, core, background):
         BaseScreen.__init__(self, size, base_size, manager, fonts)
+        pdb.set_trace()
         self.core = core
 
         current_track = self.core.playback.current_track.get()
