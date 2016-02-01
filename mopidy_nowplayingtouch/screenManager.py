@@ -23,14 +23,20 @@ logger = logging.getLogger(__name__)
 
 
 mainScreenIndex = 0
-nowPlayingIndex = 1
-queueIndex = 2
-playlistsIndex = 3
-browseIndex = 4
-streamsIndex = 5
-searchIndex = 6
-SystemIndex = 7
-MenuIndex = 8
+#nowPlayingIndex = 1
+#queueIndex = 2
+#playlistsIndex = 3
+#browseIndex = 4
+#streamsIndex = 5
+#searchIndex = 6
+#SystemIndex = 7
+#MenuIndex = 8
+
+queueIndex = 1
+playlistsIndex = 2
+browseIndex = 3
+searchIndex = 4
+MenuIndex = 5
 
 
 class ScreenManager():
@@ -75,7 +81,7 @@ class ScreenManager():
                 BrowseScreen(size, self.baseSize, self, self.fonts),
                 #StreamsScreen(size, self.baseSize, self, self.fonts),
                 SearchScreen(size, self.baseSize, self, self.fonts),
-                #SystemScreen(size, self.baseSize, self, self.fonts)],
+                #SystemScreen(size, self.baseSize, self, self.fonts),
                 MenuScreen(size, self.baseSize, self, self.fonts, self.core)]
         except:
             traceback.print_exc()
@@ -105,7 +111,7 @@ class ScreenManager():
         self.mute_changed(self.core.playback.mute.get())
         playback_state = self.core.playback.state.get()
         self.playback_state_changed(playback_state, playback_state)
-        #self.screens[menu_index].check_connection()
+        self.screens[MenuIndex].check_connection()
 
         self.change_screen(self.currentScreen)
 
