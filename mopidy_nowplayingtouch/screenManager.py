@@ -12,6 +12,7 @@ import mopidy
 from pkg_resources import Requirement, resource_filename
 
 import pygame
+import pdb
 
 # StreamsScreen, SystemScreen, NowPlayingScreen
 from screens import BaseScreen, Keyboard, BrowseScreen, MainScreen,\
@@ -229,7 +230,10 @@ class ScreenManager():
         self.updateType = BaseScreen.update_all
 
     def options_changed(self):
-        self.screens[MenuIndex].options_changed()
+        menuScreen = self.screens[MenuIndex]
+        pdb.set_trace()
+        #self.screens[MenuIndex].options_changed()
+        menuScreen.options_changed()
         self.updateType = BaseScreen.update_all
 
     def change_screen(self, new_screen):
