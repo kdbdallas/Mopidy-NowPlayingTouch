@@ -105,7 +105,7 @@ class ScreenManager():
 
         self.down_bar_objects.set_touch_object("menu_1", button)
         x = button.get_right_pos()
-
+        pdb.set_trace()
         self.options_changed()
         self.mute_changed(self.core.playback.mute.get())
         playback_state = self.core.playback.state.get()
