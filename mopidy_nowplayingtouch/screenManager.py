@@ -82,9 +82,10 @@ class ScreenManager():
                 BrowseScreen(size, self.baseSize, self, self.fonts),
                 SearchScreen(size, self.baseSize, self, self.fonts),
                 MenuScreen(size, self.baseSize, self, self.fonts, self.core)]
+            pdb.set_trace()
         except:
             traceback.print_exc()
-
+        pdb.set_trace()
         self.track = None
 
         # Menu buttons
