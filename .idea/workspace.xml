@@ -61,8 +61,8 @@
       <file leaf-file-name="screenManager.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/screenManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.747191">
-              <caret line="235" column="23" selection-start-line="235" selection-start-column="23" selection-end-line="235" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.6027287">
+              <caret line="78" column="106" selection-start-line="78" selection-start-column="106" selection-end-line="78" selection-end-column="106" />
               <folding />
             </state>
           </provider>
@@ -937,8 +937,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/screenManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.747191">
-          <caret line="235" column="23" selection-start-line="235" selection-start-column="23" selection-end-line="235" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.6027287">
+          <caret line="78" column="106" selection-start-line="78" selection-start-column="106" selection-end-line="78" selection-end-column="106" />
           <folding />
         </state>
       </provider>

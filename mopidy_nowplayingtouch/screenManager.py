@@ -77,13 +77,10 @@ class ScreenManager():
         try:
             self.screens = [
                 MainScreen(size, self.baseSize, self, self.fonts, self.cache, self.core, self.background),
-                #NowPlayingScreen(size, self.baseSize, self, self.fonts),
                 QueueScreen(size, self.baseSize, self, self.fonts),
                 PlaylistScreen(size, self.baseSize, self, self.fonts),
                 BrowseScreen(size, self.baseSize, self, self.fonts),
-                #StreamsScreen(size, self.baseSize, self, self.fonts),
                 SearchScreen(size, self.baseSize, self, self.fonts),
-                #SystemScreen(size, self.baseSize, self, self.fonts),
                 MenuScreen(size, self.baseSize, self, self.fonts, self.core)]
         except:
             traceback.print_exc()
