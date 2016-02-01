@@ -73,7 +73,7 @@ class ScreenManager():
 
         self.fonts['base'] = pygame.font.SysFont("arial", int(self.baseSize*0.9))
         self.fonts['icon'] = pygame.font.Font(font, int(self.baseSize*0.9))
-
+        pdb.set_trace()
         try:
             self.screens = [
                 MainScreen(size, self.baseSize, self, self.fonts, self.cache, self.core, self.background),
