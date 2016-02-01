@@ -23,20 +23,14 @@ logger = logging.getLogger(__name__)
 
 
 mainScreenIndex = 0
-#nowPlayingIndex = 1
-#queueIndex = 2
-#playlistsIndex = 3
-#browseIndex = 4
-#streamsIndex = 5
-#searchIndex = 6
-#SystemIndex = 7
-#MenuIndex = 8
-
-queueIndex = 1
-playlistsIndex = 2
-browseIndex = 3
-searchIndex = 4
-MenuIndex = 5
+nowPlayingIndex = 1
+queueIndex = 2
+playlistsIndex = 3
+browseIndex = 4
+streamsIndex = 5
+searchIndex = 6
+SystemIndex = 7
+MenuIndex = 8
 
 
 class ScreenManager():
