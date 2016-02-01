@@ -230,6 +230,7 @@ class ScreenManager():
         self.updateType = BaseScreen.update_all
 
     def options_changed(self):
+        pdb.set_trace()
         menuScreen = self.screens[MenuIndex]
         pdb.set_trace()
         #self.screens[MenuIndex].options_changed()
