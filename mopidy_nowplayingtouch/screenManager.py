@@ -34,13 +34,13 @@ mainScreenIndex = 0
 #SystemIndex = 7
 #MenuIndex = 8
 
-#queueIndex = 1
-#playlistsIndex = 2
-#browseIndex = 3
-#searchIndex = 4
-#MenuIndex = 5
+queueIndex = 1
+playlistsIndex = 2
+browseIndex = 3
+searchIndex = 4
+MenuIndex = 5
 
-MenuIndex = 1
+#MenuIndex = 1
 
 class ScreenManager():
 
@@ -78,6 +78,10 @@ class ScreenManager():
         try:
             self.screens = [
                 MainScreen(size, self.baseSize, self, self.fonts, self.cache, self.core, self.background),
+                QueueScreen(size, self.baseSize, self, self.fonts),
+                PlaylistScreen(size, self.baseSize, self, self.fonts),
+                BrowseScreen(size, self.baseSize, self, self.fonts),
+                SearchScreen(size, self.baseSize, self, self.fonts),
                 MenuScreen(size, self.baseSize, self, self.fonts, self.core)]
             #pdb.set_trace()
         except:
