@@ -14,7 +14,7 @@ import mopidy
 from pkg_resources import Requirement, resource_filename
 
 import pygame
-#import pdb
+import pdb
 
 # StreamsScreen, SystemScreen, NowPlayingScreen
 from screens import BaseScreen, Keyboard, BrowseScreen, MainScreen,\
@@ -40,7 +40,6 @@ browseIndex = 3
 searchIndex = 4
 MenuIndex = 5
 
-#MenuIndex = 1
 
 class ScreenManager():
 
@@ -74,7 +73,7 @@ class ScreenManager():
 
         self.fonts['base'] = pygame.font.SysFont("arial", int(self.baseSize*0.9))
         self.fonts['icon'] = pygame.font.Font(font, int(self.baseSize*0.9))
-        #pdb.set_trace()
+
         try:
             self.screens = [
                 MainScreen(size, self.baseSize, self, self.fonts, self.cache, self.core, self.background),
@@ -83,10 +82,10 @@ class ScreenManager():
                 BrowseScreen(size, self.baseSize, self, self.fonts),
                 SearchScreen(size, self.baseSize, self, self.fonts),
                 MenuScreen(size, self.baseSize, self, self.fonts, self.core)]
-            #pdb.set_trace()
+
         except:
             traceback.print_exc()
-        #pdb.set_trace()
+
         self.track = None
 
         # Menu buttons
@@ -107,7 +106,7 @@ class ScreenManager():
 
         self.down_bar_objects.set_touch_object("menu_1", button)
         x = button.get_right_pos()
-        #pdb.set_trace()
+
         self.options_changed()
         self.mute_changed(self.core.playback.mute.get())
         playback_state = self.core.playback.state.get()
@@ -138,6 +137,7 @@ class ScreenManager():
         update_type = self.get_update_type()
         if update_type != BaseScreen.no_update:
             rects = []
+            pdb.set_trace()
             surface = self.background.draw_background()
             if self.keyboard:
                 self.keyboard.update(surface)
@@ -231,9 +231,7 @@ class ScreenManager():
         self.updateType = BaseScreen.update_all
 
     def options_changed(self):
-        #pdb.set_trace()
         menuScreen = self.screens[MenuIndex]
-        #pdb.set_trace()
         #self.screens[MenuIndex].options_changed()
         menuScreen.options_changed()
         self.updateType = BaseScreen.update_all
