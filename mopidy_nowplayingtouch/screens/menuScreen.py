@@ -5,12 +5,14 @@ from baseScreen import BaseScreen
 
 from ..graphic_utils import ListView
 
+
 class MenuScreen(BaseScreen):
     def __init__(self, size, base_size, manager, fonts, core):
         BaseScreen.__init__(self, size, base_size, manager, fonts)
+        self.touch_text_manager = None
         self.ip = None
         self.core = core
-        self.list = ListView((0, 0), (size[0], size[1]-base_size),
+        self.list = ListView((0, 0), (size[0], size[1] - base_size),
                              base_size, fonts['base'])
 
         self.list_items = ["Random", "Repeat", "Single", "Consume",
@@ -53,6 +55,7 @@ class MenuScreen(BaseScreen):
 
     # Will check internet connection
     def check_connection(self):
+        global s
         try:
             s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
             s.connect(("8.8.8.8", 80))
@@ -80,7 +83,7 @@ class MenuScreen(BaseScreen):
 
     def set_connection(self, connection, loading):
         internet = self.touch_text_manager.get_touch_object(
-            "internet")
+                "internet")
         if loading:
             internet.set_text(u"\ue627", None)
             internet.set_active(False)

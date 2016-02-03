@@ -29,6 +29,7 @@ class MainScreen(BaseScreen):
         self.core = core
         self.cache = cache
         self.background = background
+        self.touch_text_manager = ScreenObjectsManager()
 
         current_track = self.core.playback.current_track.get()
 
@@ -40,8 +41,6 @@ class MainScreen(BaseScreen):
         # Top bar
         self.top_bar = pygame.Surface((self.size[0], self.base_size), pygame.SRCALPHA)
         self.top_bar.fill((0, 0, 0, 128))
-
-        self.touch_text_manager = ScreenObjectsManager()
 
         # Play/pause
         button = TouchAndTextItem(self.fonts['icon'], u"\ue615 ", (0, 0), None)
@@ -105,16 +104,19 @@ class MainScreen(BaseScreen):
 
     def update_progress(self, screen, rects):
         if self.progress_show:
-                track_pos_millis = self.core.playback.time_position.get()
-                new_track_pos = track_pos_millis / 1000
+            track_pos_millis = self.core.playback.time_position.get()
+            new_track_pos = track_pos_millis / 1000
 
-                if new_track_pos != self.current_track_pos:
-                    progress = self.touch_text_manager.get_touch_object("time_progress")
-                    progress.set_value(track_pos_millis)
-                    self.current_track_pos = new_track_pos
-                    progress.set_text(
-                        time.strftime('%M:%S', time.gmtime(self.current_track_pos)) + "/" + self.track_duration)
-                    return progress
+            if new_track_pos != self.current_track_pos:
+                progress = self.touch_text_manager.get_touch_object(
+                        "time_progress")
+                progress.set_value(track_pos_millis)
+                self.current_track_pos = new_track_pos
+                progress.set_text(
+                        time.strftime('%M:%S', time.gmtime(
+                                self.current_track_pos)) +
+                        "/" + self.track_duration)
+                return progress
         return None
 
     def track_started(self, track):
