@@ -11,9 +11,9 @@ class DynamicBackground:
         self.image_loaded = False
         self.size = size
         self.surface = pygame.Surface(self.size).convert()
-        self.surface.fill((145, 16, 16))
+        self.surface.fill((255, 255, 255))
         self.surface_image = pygame.Surface(self.size).convert()
-        self.surface_image.fill((145, 16, 16))
+        self.surface_image.fill((255, 255, 255))
         self.surface_image_last = pygame.Surface(self.size).convert()
         self.update = True
         self.screen_change_percent = 100
@@ -21,7 +21,7 @@ class DynamicBackground:
     def draw_background(self):
         if self.image_loaded:
             if self.screen_change_percent < 255:
-                self.surface.fill((255, 255, 255))
+                self.surface.fill((53, 107, 175))
                 self.surface_image_last.set_alpha(255 - self.screen_change_percent)
                 self.surface_image.set_alpha(self.screen_change_percent)
                 self.surface.blit(self.surface_image_last, (0, 0))
