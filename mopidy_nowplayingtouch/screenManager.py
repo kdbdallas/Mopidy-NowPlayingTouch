@@ -109,14 +109,14 @@ class ScreenManager():
 
         # Menu button
         button = TouchAndTextItem(self.fonts['icon'], u" \ue60a",
-                                  (x, self.size[1] - self.base_size),
+                                  (x, self.size[1] - self.baseSize),
                                   button_size,
                                   center=True)
         self.down_bar_objects.set_touch_object("menu_5", button)
 
         # Down bar
         self.down_bar = pygame.Surface(
-                (self.size[0], self.size[1] - self.base_size),
+                (self.size[0], self.size[1] - self.baseSize),
                 pygame.SRCALPHA)
         self.down_bar.fill((0, 0, 0, 200))
 
