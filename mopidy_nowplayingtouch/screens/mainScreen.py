@@ -29,6 +29,7 @@ class MainScreen(BaseScreen):
         self.core = core
         self.cache = cache
         self.background = background
+        self.update_keys = []
         self.touch_text_manager = ScreenObjectsManager()
 
         current_track = self.core.playback.current_track.get()
