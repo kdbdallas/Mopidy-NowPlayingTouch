@@ -71,8 +71,8 @@
       <file leaf-file-name="background_manager.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/graphic_utils/background_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25361156">
-              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.27688605">
+              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -948,8 +948,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/graphic_utils/background_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25361156">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.27688605">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding />
         </state>
       </provider>
