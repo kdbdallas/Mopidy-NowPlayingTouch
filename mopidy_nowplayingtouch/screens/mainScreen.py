@@ -41,7 +41,7 @@ class MainScreen(BaseScreen):
 
         # Top bar
         self.top_bar = pygame.Surface((self.size[0], self.base_size), pygame.SRCALPHA)
-        self.top_bar.fill((0, 0, 0, 128))
+        self.top_bar.fill((0, 0, 0, 255))
 
         # Play/pause
         button = TouchAndTextItem(self.fonts['icon'], u"\ue615 ", (0, 0), None)

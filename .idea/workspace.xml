@@ -38,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainScreen.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mainScreen.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/screens/mainScreen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.814816">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.49197432">
+              <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -68,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="background_manager.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="background_manager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/graphic_utils/background_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1565008">
-              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+            <state vertical-scroll-proportion="-8.333333">
+              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -143,8 +143,8 @@
         <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/__init__.py" />
         <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/menuScreen.py" />
         <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/screenManager.py" />
-        <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/mainScreen.py" />
         <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/graphic_utils/background_manager.py" />
+        <option value="$PROJECT_DIR$/mopidy_nowplayingtouch/screens/mainScreen.py" />
       </list>
     </option>
   </component>
@@ -938,18 +938,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/screens/mainScreen.py">
+    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/graphic_utils/background_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.814816">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state vertical-scroll-proportion="-8.333333">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/graphic_utils/background_manager.py">
+    <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/screens/mainScreen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1565008">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.49197432">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
           <folding />
         </state>
       </provider>
