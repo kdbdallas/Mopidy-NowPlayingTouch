@@ -150,7 +150,6 @@ class ScreenManager():
         update_type = self.get_update_type()
         if update_type != BaseScreen.no_update:
             rects = []
-            pdb.set_trace()
             surface = self.background.draw_background()
             if self.keyboard:
                 self.keyboard.update(surface)
