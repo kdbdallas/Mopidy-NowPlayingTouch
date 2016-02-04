@@ -11,7 +11,7 @@ class DynamicBackground:
         self.image_loaded = False
         self.size = size
         self.surface = pygame.Surface(self.size).convert()
-        self.surface.fill((255, 255, 255))
+        self.surface.fill((230, 54, 54))
         self.surface_image = pygame.Surface(self.size).convert()
         self.surface_image.fill((230, 54, 54))
         self.surface_image_last = pygame.Surface(self.size).convert()
