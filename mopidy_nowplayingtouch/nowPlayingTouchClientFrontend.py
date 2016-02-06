@@ -30,8 +30,8 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
         self.screen_size = (config['nowplayingtouch']['screen_height'], config['nowplayingtouch']['screen_width'])
         self.resolution_factor = (config['nowplayingtouch']['resolution_factor'])
 
-        if config['nowplayingtouch']['sdl_fbdev'].lower() != "none":
-            os.environ["SDL_FBDEV"] = config['nowplayingtouch']['sdl_fbdev']
+        #if config['nowplayingtouch']['sdl_fbdev'].lower() != "none":
+        os.environ["SDL_FBDEV"] = config['nowplayingtouch']['sdl_fbdev']
 
         if config['nowplayingtouch']['sdl_mousdrv'].lower() != "none":
             os.environ["SDL_MOUSEDRV"] = (config['nowplayingtouch']['sdl_mousdrv'])
