@@ -32,9 +32,6 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
 
         if config['nowplayingtouch']['sdl_fbdev'].lower() != "none":
             os.environ["SDL_FBDEV"] = config['nowplayingtouch']['sdl_fbdev']
-            #os.environ('SDL_FBDEV', config['nowplayingtouch']['sdl_fbdev'])
-            os.putenv('SDL_VIDEODRIVER', 'fbcon')
-            os.putenv('SDL_NOMOUSE', '1')
 
         if config['nowplayingtouch']['sdl_mousdrv'].lower() != "none":
             os.environ["SDL_MOUSEDRV"] = (config['nowplayingtouch']['sdl_mousdrv'])
