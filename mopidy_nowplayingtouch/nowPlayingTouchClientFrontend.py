@@ -44,6 +44,8 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
 
         os.environ["SDL_PATH_DSP"] = config['nowplayingtouch']['sdl_path_dsp']
 
+        os.environ["SDL_VIDEODRIVER"] = "fbcon"
+
         pygame.init()
         pygame.display.set_caption("Mopidy-NowPlayingTouch")
 
