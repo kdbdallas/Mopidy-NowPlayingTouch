@@ -5,7 +5,7 @@ import os
 import traceback
 from threading import Thread
 from ft5406 import Touchscreen
-from gui import touchscreen_event
+from gui import Button, render_widgets, touchscreen_event
 
 from mopidy import core, exceptions
 
@@ -80,7 +80,17 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
             touch.on_release = touchscreen_event
             touch.on_move = touchscreen_event
 
+        Button(
+                label="My Button",
+                color=(255, 0, 0),
+                position=(300, 190),
+                size=(200, 100),
+                action=self.button_event)
+
         ts.run()
+
+    def button_event(b, e, t):
+        print("{} pressed!".format(b.label))
 
     def get_display_surface(self, size):
         try:
@@ -104,6 +114,9 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
                     self.screenManager.resize(event)
                 else:
                     self.screenManager.event(event)
+
+            render_widgets(self.screen)
+            pygame.time.sleep(0.01)
 
         ts = Touchscreen()
         ts.stop()
