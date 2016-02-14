@@ -84,8 +84,7 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
                 label="My Button",
                 color=(255, 0, 0),
                 position=(300, 190),
-                size=(200, 100),
-                action=None)
+                size=(200, 100))
 
         ts.run()
 
