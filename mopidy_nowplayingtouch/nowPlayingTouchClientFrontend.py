@@ -80,15 +80,12 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
             touch.on_release = touchscreen_event
             touch.on_move = touchscreen_event
 
-        def button_event(b, e, t):
-            print("{} pressed!".format(b.label))
-
         Button(
                 label="My Button",
                 color=(255, 0, 0),
                 position=(300, 190),
                 size=(200, 100),
-                action=button_event)
+                action=None)
 
         ts.run()
 
