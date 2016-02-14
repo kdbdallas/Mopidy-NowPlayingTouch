@@ -25,7 +25,7 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
         self.running = False
         self.cursor = config['nowplayingtouch']['cursor']
         self.cache_dir = config['nowplayingtouch']['cache_dir']
-        #self.ts = Touchscreen()
+        self.ts = Touchscreen()
 
         # The way the LCD's work we have to put the height value first.
         # We do it here so the user doesnt have to do anything strange.
@@ -73,7 +73,18 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
 
             self.gpio_manager = GPIOManager(pins)
 
-        #self.ts.run()
+        for touch in self.ts.touches:
+            touch.on_move = self.touch_handler
+
+        self.ts.run()
+
+    def touch_handler(event, touch):
+        if event == TS_PRESS:
+            print("Got Press", touch)
+        if event == TS_RELEASE:
+            print("Got release", touch)
+        if event == TS_MOVE:
+            print("Got move", touch)
 
     def get_display_surface(self, size):
         try:
@@ -83,7 +94,7 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
 
     def start_thread(self):
         clock = pygame.time.Clock()
-        #pygame.event.set_blocked(pygame.MOUSEMOTION)
+        pygame.event.set_blocked(pygame.MOUSEMOTION)
 
         while self.running:
             clock.tick(12)
@@ -98,7 +109,7 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
                 else:
                     self.screenManager.event(event)
 
-        #self.ts.stop()
+        self.ts.stop()
         pygame.quit()
 
     def on_start(self):

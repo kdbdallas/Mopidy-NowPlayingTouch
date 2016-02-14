@@ -83,8 +83,8 @@
       <file leaf-file-name="nowPlayingTouchClientFrontend.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/nowPlayingTouchClientFrontend.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.22792937">
-              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.782504">
+              <caret line="76" column="46" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -939,8 +939,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mopidy_nowplayingtouch/nowPlayingTouchClientFrontend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.22792937">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.782504">
+          <caret line="76" column="46" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="46" />
           <folding />
         </state>
       </provider>
