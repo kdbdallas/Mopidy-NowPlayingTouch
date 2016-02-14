@@ -5,6 +5,7 @@ import os
 import traceback
 from threading import Thread
 from ft5406 import Touchscreen
+from gui import touchscreen_event
 
 from mopidy import core, exceptions
 
