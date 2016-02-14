@@ -5,7 +5,7 @@ import os
 import traceback
 from threading import Thread
 from ft5406 import Touchscreen
-from gui import render_widgets, touchscreen_event
+from gui import text, render_widgets, touchscreen_event
 
 from mopidy import core, exceptions
 
@@ -79,6 +79,8 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
             touch.on_press = touchscreen_event
             touch.on_release = touchscreen_event
             touch.on_move = touchscreen_event
+            txt="x: " + ts.touches.x + " y: " + ts.touches.y
+            gui.text(self.screen, txt, (300, 300), (200, 100), (125, 125, 125))
 
         ts.run()
 
