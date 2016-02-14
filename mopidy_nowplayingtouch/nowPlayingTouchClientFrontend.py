@@ -80,6 +80,8 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
             touch.on_release = touchscreen_event
             touch.on_move = touchscreen_event
 
+        ts.run()
+
     def get_display_surface(self, size):
         try:
             self.screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
