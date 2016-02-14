@@ -4,6 +4,7 @@ import logging
 import os
 import traceback
 from threading import Thread
+from ft5406 import Touchscreen
 
 from mopidy import core, exceptions
 
@@ -44,8 +45,6 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
 
         os.environ["SDL_PATH_DSP"] = config['nowplayingtouch']['sdl_path_dsp']
 
-        os.environ["SDL_VIDEODRIVER"] = "fbcon"
-
         pygame.init()
         pygame.display.set_caption("Mopidy-NowPlayingTouch")
 
@@ -73,6 +72,13 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
 
             self.gpio_manager = GPIOManager(pins)
 
+        ts = Touchscreen()
+
+        for touch in ts.touches:
+            touch.on_press = touchscreen_event
+            touch.on_release = touchscreen_event
+            touch.on_move = touchscreen_event
+
     def get_display_surface(self, size):
         try:
             self.screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
@@ -95,6 +101,7 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
                     self.screenManager.resize(event)
                 else:
                     self.screenManager.event(event)
+        ts.stop()
         pygame.quit()
 
     def on_start(self):

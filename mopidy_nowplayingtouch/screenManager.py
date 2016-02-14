@@ -16,7 +16,7 @@ from pkg_resources import Requirement, resource_filename
 import pygame
 import pdb
 
-# StreamsScreen, SystemScreen, NowPlayingScreen
+# StreamsScreen, SystemScreen, NowPlayingScrqaeen
 from screens import BaseScreen, Keyboard, BrowseScreen, MainScreen,\
     PlaylistScreen, QueueScreen, SearchScreen, MenuScreen
 
