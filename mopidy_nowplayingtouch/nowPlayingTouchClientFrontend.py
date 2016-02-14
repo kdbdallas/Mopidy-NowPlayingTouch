@@ -78,7 +78,7 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
 
         self.ts.run()
 
-    def touch_handler(event, touch):
+    def touch_handler(self, event, touch):
         if event == TS_PRESS:
             print("Got Press", touch)
         if event == TS_RELEASE:
