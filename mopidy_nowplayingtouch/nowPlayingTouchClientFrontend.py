@@ -102,6 +102,8 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
                     self.screenManager.resize(event)
                 else:
                     self.screenManager.event(event)
+
+        ts = Touchscreen()
         ts.stop()
         pygame.quit()
 
