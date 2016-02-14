@@ -74,7 +74,7 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
             self.gpio_manager = GPIOManager(pins)
 
         ts = Touchscreen()
-        tch = Touch()
+        tch = Touch(0x2f, 0, 0)
 
         for touch in ts.touches:
             touch.on_press = touchscreen_event
