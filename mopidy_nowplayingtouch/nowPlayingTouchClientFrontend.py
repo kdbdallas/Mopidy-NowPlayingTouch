@@ -4,7 +4,6 @@ import logging
 import os
 import traceback
 from threading import Thread
-from ft5406 import Touchscreen, TS_PRESS, TS_RELEASE, TS_MOVE
 
 from mopidy import core, exceptions
 
@@ -25,7 +24,6 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
         self.running = False
         self.cursor = config['nowplayingtouch']['cursor']
         self.cache_dir = config['nowplayingtouch']['cache_dir']
-        self.ts = Touchscreen()
 
         # The way the LCD's work we have to put the height value first.
         # We do it here so the user doesnt have to do anything strange.
@@ -73,19 +71,6 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
 
             self.gpio_manager = GPIOManager(pins)
 
-        for touch in self.ts.touches:
-            touch.on_move = self.touch_handler
-
-        self.ts.run()
-
-    def touch_handler(self, event, touch):
-        if event == TS_PRESS:
-            print("Got Press", touch)
-        if event == TS_RELEASE:
-            print("Got release", touch)
-        if event == TS_MOVE:
-            print("Got move", touch)
-
     def get_display_surface(self, size):
         try:
             self.screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
@@ -109,7 +94,6 @@ class NowPlayingTouch(pykka.ThreadingActor, core.CoreListener):
                 else:
                     self.screenManager.event(event)
 
-        self.ts.stop()
         pygame.quit()
 
     def on_start(self):
